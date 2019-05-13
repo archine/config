@@ -1,20 +1,19 @@
-spring:
-  datasource:
-    url: jdbc:mysql://127.0.0.1:3306/cloud?characterEncoding=utf8&useSSL=false
-    password: root
-    username: root
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    type: com.zaxxer.hikari.HikariDataSource
-    hikari:
-      # 最小空闲的连接数
-      minimum-idle: 5
-      # 连接池最大的数量
-      maximum-pool-size: 15
-      # 连接在池中的最长空闲时间,单位毫秒
-      idle-timeout: 30000
-      # 允许连接在等待池空闲的最长时间,单位毫秒
-      connection-timeout: 20000
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
+datasource:
+  url: jdbc:mysql://127.0.0.1:3306/cloud?characterEncoding=utf8&useSSL=false
+  password: root
+  username: root
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  type: com.zaxxer.hikari.HikariDataSource
+  hikari:
+    # 最小空闲的连接数
+    minimum-idle: 5
+    # 连接池最大的数量
+    maximum-pool-size: 15
+    # 连接在池中的最长空闲时间,单位毫秒
+    idle-timeout: 30000
+    # 允许连接在等待池空闲的最长时间,单位毫秒
+    connection-timeout: 20000
+jpa:
+  hibernate:
+    ddl-auto: update
+  show-sql: true
