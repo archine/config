@@ -18,7 +18,7 @@ spring:
       # 允许连接在等待池空闲的最长时间,单位毫秒
       connection-timeout: 20000
   jpa:
-    show-sql: true
+#    show-sql: true
     hibernate:
       ddl-auto: update
   activemq:
