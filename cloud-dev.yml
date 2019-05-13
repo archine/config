@@ -1,6 +1,10 @@
-spring:  
+server:
+  port: 18080
+spring:
+  application:
+    name: demo
   datasource:
-    url: jdbc:mysql://127.0.0.1:3306/cloud?characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://127.0.0.1:3306/cloud?characterEncoding=utf8&useSSL=false
     password: root
     username: root
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -18,6 +22,11 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+cn:
+  gjing:
+    swagger:
+      base-package: com.a.web.api
+      title: 测试demo
 eureka:
   client:
     service-url:
