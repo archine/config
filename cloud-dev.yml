@@ -3,7 +3,7 @@ spring:
     host: localhost
     password:
   datasource:
-    url: jdbc:mysql://127.0.0.1:3307/cloud?characterEncoding=utf8&useSSL=false&serverTimezone=UTC
+    url: jdbc:mysql://127.0.0.1:3306/cloud?characterEncoding=utf8&useSSL=false&serverTimezone=UTC
     password: root
     username: root
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -21,11 +21,6 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
-  activemq:
-    host: 127.0.0.1
-    port: 5672
-    username: guest
-    password: guest
 eureka:
   client:
     service-url:
